@@ -19,7 +19,10 @@ public class BrandController {
 	@Autowired
 	private IBrandApplicationService brandApplicationService;
 	
-	
+
+	//TODO: exibir erro 400 quando a requisição falhar
+	//TODO: Retornar sempre o output com ou sem erros
+	//TODO: Implementar Restful pattern, usando no método POST, o input e o body da requisição, ao invés de query string params
 	@PostMapping("/brand")
 	@ResponseStatus(HttpStatus.CREATED)
 	public void insertBrand(@RequestParam String name, @RequestParam String dateOfFoundation) throws ParseException{

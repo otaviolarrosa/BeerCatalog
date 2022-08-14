@@ -18,7 +18,10 @@ public class BrandApplicationService implements IBrandApplicationService {
 
 	@Autowired
 	IBrandDomain brandDomain;
-	
+
+	//TODO: Transformar esse método, aplicando todos os conceitos de Object Calisthenics
+	//TODO: Aplicar conceito de Fail Fast Validations
+	//TODO: Trabalhar com conceito de Input e output
 	public void insertNewBrand(String name, String dateOfFoundation) throws ParseException {
 		BrandValueObject brand = new BrandValueObject();
 		brand.setName(name);
